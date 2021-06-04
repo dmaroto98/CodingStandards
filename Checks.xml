@@ -12,6 +12,15 @@ This is a check configurations for enginner of software 2 - task 1
 <module name="Checker">
   <property name="severity" value="warning"/>
   <module name="TreeWalker">
+    <module name="SuppressionCommentFilter"/>
     <module name="MissingJavadocMethod"/>
+    <module name="Indentation"/>
+    <module name="JavadocMethod"/>
+    <module name="MethodName">
+      <property name="format" value="^[a-z](_?[a-zA-Z0-9]+)*$"/>
+    </module>
+    <module name="WhitespaceAfter">
+      <property name="tokens" value="COMMA,SEMI"/>
+    </module>
   </module>
 </module>
